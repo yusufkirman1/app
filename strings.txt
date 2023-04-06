@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">lagari</string>
+    <string name="EditText">Lutfen Adinizi Giriniz</string>
+    <string name="btnucus">Ucus Kontrol</string>
+    <string name="btngenel">Genel Kontrol</string>
+    <string name="btn1">Kaydet</string>
+    <string name="liste">Kontrol Listesi</string>
+    <string name="liste1">Mekanik Kontrol Listesi</string>
+    <string name="isim">Isim girmediniz</string>
+    <string name="CheckBox1">1.	GPS soketi 1 takıldı.</string>
+    <string name="CheckBox2">2.	GPS soketi 2 takıldı.</string>
+    <string name="CheckBox3">3.	Steering soketi takıldı.</string>
+    <string name="CheckBox4">4.	Airdrop soketi takıldı</string>
+    <string name="CheckBox5">5.	Lidar soketi takıldı.</string>
+    <string name="CheckBox6">6.	Kanat soketleri takıldı</string>
+    <string name="CheckBox7">7.	Kuyruk soketleri takıldı.</string>
+    <string name="CheckBox8">8.	Payload-Anten bağlantısı yapıldı.</string>
+    <string name="CheckBox9">9.	Telemetri antenleri takıldı.</string>
+    <string name="CheckBox10">10.	Kamera bağlantısı yapıldı.</string>
+    <string name="CheckBox11">11.	Piller yerleştirildi ve kullanılan pillerin voltajları:</string>
+    <string name="CheckBox12">12.	Pixhawk-Raspberry bağlantısı çıkarıldı.</string>
+    <string name="CheckBox13">13.	Payload-Box sistemleri çalıştırıldı.</string>
+    <string name="CheckBox14">14.	Pixhawk-Raspberry bağlantısı yapıldı.</string>
+    <string name="CheckBox15">15.	Görev yüklendi.</string>
+    <string name="CheckBox16">16.	Telemetri</string>
+    <string name="CheckBox17">17.	UDP Haberleşme</string>
+    <string name="CheckBox18">18.	Pitot</string>
+    <string name="CheckBox19">19.	Baş Açısı</string>
+    <string name="CheckBox20">20.	Lidar</string>
+    <string name="CheckBox21">21.	Hdop_1:   Satcount_1:</string>
+    <string name="CheckBox22">22.	Hdop_2:   Satcount_2:</string>
+    <string name="CheckBox23">23.	Kumanda test edildi.</string>
+    <string name="CheckBox24">24.	Manuel mod yüzeyleri test edildi.</string>
+    <string name="CheckBox25">25.	FBWA mod tepkileri kontrol edildi.</string>
+    <string name="CheckBox26">26.	Parametreler kontrol edildi.</string>
+    <string name="CheckBox27">27.	Sunucu ile bağlantı kuruldu.</string>
+    <string name="CheckBox28">28.	Görüntü işleme bilgisayarıyla bağlantı kuruldu</string>
+    <string name="CheckBox29">29.	Fotoğraf çekme kodu başlatıldı.</string>
+    <string name="CheckBox30">30.	ESC bağlantısı yapıldı.</string>
+    <string name="CheckBox31">31.	5 saniye tam gaz testi yapıldı.</string>
+    <string name="CheckBox32">32.	Hava aracı pist başına alındı.</string>
+    <string name="CheckBox33">33.	Rüzgar açısı ve hızı</string>
+    <string name="CheckBox34">34.	Telemetri sinyal gücü</string>
+    <string name="CheckBox35">35.	GPS konumu kontrol edildi.</string>
+    <string name="CheckBox36">36.	Otonom Kalkış</string>
+    <string name="CheckBox37">37.	Otonom Uçuş</string>
+    <string name="CheckBox38">38.	Otonom İniş</string>
+    <string name="CheckBox39">39.   Hız Birimi knot olarak ayarlandı</string>
+    <string name="CheckBox40">40.   Yükseklik Feet Olarak Ayarlandı</string>
+    <string name="CheckBox41">41.   Relative Absolute Yükseklik Kontrolü Yapıldı</string>
+    <string name="CheckBox42">42.   Genel Notlar</string>
+    <string name="EditText1">.</string>
+    <string name="EditText2">.</string>
+    <string name="EditText3">.</string>
+    <string name="EditText4">.</string>
+    <string name="EditText5">.</string>
+    <string name="EditText6">.</string>
+    <string name="EditText7">.</string>
+    <string name="EditText8">.</string>
+    <string name="EditText9">.</string>
+    <string name="EditText10">.</string>
+    <string name="EditText11">.</string>
+    <string name="EditText12">.</string>
+    <string name="EditText13">.</string>
+    <string name="EditText14">.</string>
+    <string name="EditText15">.</string>
+    <string name="EditText16">.</string>
+    <string name="EditText17">.</string>
+    <string name="EditText18">.</string>
+    <string name="EditText19">.</string>
+    <string name="EditText20">.</string>
+    <string name="EditText21">.</string>
+    <string name="EditText22">.</string>
+    <string name="EditText23">.</string>
+    <string name="EditText24">.</string>
+    <string name="EditText25">.</string>
+    <string name="EditText26">.</string>
+    <string name="EditText27">.</string>
+    <string name="EditText28">.</string>
+    <string name="EditText29">.</string>
+    <string name="EditText30">.</string>
+    <string name="EditText31">.</string>
+    <string name="EditText32">.</string>
+    <string name="EditText33">.</string>
+    <string name="EditText34">.</string>
+    <string name="EditText35">.</string>
+    <string name="EditText36">.</string>
+    <string name="EditText37">.</string>
+    <string name="EditText38">.</string>
+    <string name="EditText39">.</string>
+    <string name="EditText40">.</string>
+    <string name="EditText41">.</string>
+    <string name="EditText42">.</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

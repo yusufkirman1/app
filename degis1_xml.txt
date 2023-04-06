@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/checkbox1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cz3"
+    tools:context=".degis">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt1"
+            android:text="@string/CheckBox1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt2"
+            android:text="@string/CheckBox2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt3"
+            android:text="@string/CheckBox3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt4"
+            android:text="@string/CheckBox4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt5"
+            android:text="@string/CheckBox5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt6"
+            android:text="@string/CheckBox6"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt7"
+            android:text="@string/CheckBox7"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt8"
+            android:text="@string/CheckBox8"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt9"
+            android:text="@string/CheckBox9"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt10"
+            android:text="@string/CheckBox10"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt11"
+            android:text="@string/CheckBox11"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <EditText
+            android:id="@+id/edt12"
+            android:text="@string/CheckBox12"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt13"
+            android:text="@string/CheckBox13"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt14"
+            android:text="@string/CheckBox14"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt15"
+            android:text="@string/CheckBox15"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt16"
+            android:text="@string/CheckBox16"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt17"
+            android:text="@string/CheckBox17"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <EditText
+            android:id="@+id/edt18"
+            android:text="@string/CheckBox18"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt19"
+            android:text="@string/CheckBox19"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt20"
+            android:text="@string/CheckBox20"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt21"
+            android:text="@string/CheckBox21"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt22"
+            android:text="@string/CheckBox22"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt23"
+            android:text="@string/CheckBox23"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt24"
+            android:text="@string/CheckBox24"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt25"
+            android:text="@string/CheckBox25"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <EditText
+            android:id="@+id/edt26"
+            android:text="@string/CheckBox26"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt27"
+            android:text="@string/CheckBox27"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt28"
+            android:text="@string/CheckBox28"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt29"
+            android:text="@string/CheckBox29"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt30"
+            android:text="@string/CheckBox30"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt31"
+            android:text="@string/CheckBox31"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt32"
+            android:text="@string/CheckBox32"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt33"
+            android:text="@string/CheckBox33"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt34"
+            android:text="@string/CheckBox34"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt35"
+            android:text="@string/CheckBox35"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt36"
+            android:text="@string/CheckBox36"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <EditText
+            android:id="@+id/edt37"
+            android:text="@string/CheckBox37"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <EditText
+            android:id="@+id/edt38"
+            android:text="@string/CheckBox38"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt39"
+            android:text="@string/CheckBox39"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt40"
+            android:text="@string/CheckBox40"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt41"
+            android:text="@string/CheckBox41"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edt42"
+            android:text="@string/CheckBox42"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <Button
+            android:id="@+id/btndegis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btndegis" />
+
+
+    </LinearLayout>
+</ScrollView>

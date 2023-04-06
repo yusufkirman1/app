@@ -1,0 +1,51 @@
+package com.example.lagari1;
+
+import android.content.Intent;
+import android.os.Bundle;
+
+import android.widget.Button;
+import android.widget.EditText;
+import androidx.appcompat.app.AppCompatActivity;
+
+
+
+
+public class MainActivity extends AppCompatActivity {
+
+
+    EditText editText;
+    Button btn1,btn2;                                                                         //java için xml de tanımlı componentleri java da tanımlıyoruz
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {                                //sayfa yüklendiğinde neler olsun kodu
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+        btn1 = findViewById(R.id.btnusuc);
+        btn2=findViewById(R.id.btngenel);
+        editText = findViewById(R.id.EditText);                              //buton ve edittext leri tanımlıyoruz
+
+
+        btn2.setOnClickListener(v -> {
+            String  isim =editText.getText().toString();
+
+            Intent make =new Intent(MainActivity.this,AnaEkran2.class);
+            make.putExtra("Name",isim);
+            startActivity(make);
+        });
+        btn1.setOnClickListener(v -> {
+
+            String   isim =editText.getText().toString();
+
+            Intent send = new Intent(MainActivity.this, AnaEkran1.class);     //diğer sayfaya geçiş için bir intent oluşturduk
+            send.putExtra("Name", isim);                                           //bu sayfadan aldığımız isimi diğer sayfaya intent ile beraber yolluyoruz
+            startActivity(send);                                                         //yollama işlemini başlatıyoruz
+
+        });
+
+
+    }
+
+
+}

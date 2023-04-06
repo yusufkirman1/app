@@ -1,0 +1,2 @@
+Checklistlerin en altında 2 butonumuz var “Kaydet” ve  “Listeyi Düzenle” Kaydet butonu bir excel dosyası oluşturuyor bu excel dosyasının için de checklistteki talimatlar var eğer işaretlenirse hemen solundaki sütuna + işareti geliyor ve sağına da düzenlenen edittext’in metni geliyor.
+ En alttaki listeyi düzenle butonuyla checklist elemanları düzenlenebiliyor

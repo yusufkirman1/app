@@ -1,0 +1,692 @@
+package com.example.lagari1;
+
+import static org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+
+
+import android.content.Intent;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.os.Environment;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFFont;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.IndexedColors;
+import androidx.appcompat.app.AppCompatActivity;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.util.Date;
+
+public class AnaEkran2 extends AppCompatActivity {
+
+
+    Button btn1;
+    private EditText et1, et2, et3, et4, et5, et6, et7, et8, et9, et10, et11, et12, et13,
+            et14, et15, et16, et17, et18, et19, et20, et21, et22, et23, et24, et25, et26, et27, et28, et29, et30;
+    private CheckBox cb1, cb2, cb3, cb4, cb5, cb6, cb7, cb8, cb9, cb10, cb11, cb12, cb13,
+            cb14, cb15, cb16, cb17, cb18, cb19, cb20, cb21, cb22, cb23, cb24, cb25, cb26, cb27, cb28, cb29, cb30;
+    private TextView isim, tarihh, t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12,
+            t13, t14, t15, t16, t17, t18, t19, t20, t21, t22, t23, t24, t25, t26, t27, t28, t29, t30;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_ana_ekran2);
+
+        btn1 = findViewById(R.id.btn1);
+        et1 = (EditText) findViewById(R.id.EditText1);
+        et2 = (EditText) findViewById(R.id.EditText2);
+        et3 = (EditText) findViewById(R.id.EditText3);
+        et4 = (EditText) findViewById(R.id.EditText4);
+        et5 = (EditText) findViewById(R.id.EditText5);
+        et6 = (EditText) findViewById(R.id.EditText6);
+        et7 = (EditText) findViewById(R.id.EditText7);
+        et8 = (EditText) findViewById(R.id.EditText8);
+        et9 = (EditText) findViewById(R.id.EditText9);
+        et10 = (EditText) findViewById(R.id.EditText10);
+        et11 = (EditText) findViewById(R.id.EditText11);
+        et12 = (EditText) findViewById(R.id.EditText12);
+        et13 = (EditText) findViewById(R.id.EditText13);
+        et14 = (EditText) findViewById(R.id.EditText14);
+        et15 = (EditText) findViewById(R.id.EditText15);
+        et16 = (EditText) findViewById(R.id.EditText16);
+        et17 = (EditText) findViewById(R.id.EditText17);
+        et18 = (EditText) findViewById(R.id.EditText18);
+        et19 = (EditText) findViewById(R.id.EditText19);
+        et20 = (EditText) findViewById(R.id.EditText20);
+        et21 = (EditText) findViewById(R.id.EditText21);
+        et22 = (EditText) findViewById(R.id.EditText22);
+        et23 = (EditText) findViewById(R.id.EditText23);
+        et24 = (EditText) findViewById(R.id.EditText24);
+        et25 = (EditText) findViewById(R.id.EditText25);
+        et26 = (EditText) findViewById(R.id.EditText26);
+        et27 = (EditText) findViewById(R.id.EditText27);
+        et28 = (EditText) findViewById(R.id.EditText28);
+        et29 = (EditText) findViewById(R.id.EditText29);
+        et30 = (EditText) findViewById(R.id.EditText30);
+
+        tarihh = (TextView) findViewById(R.id.tarih);
+        isim = (TextView) findViewById(R.id.isim);
+
+        Date simdikiZaman = new Date();                  //tarih aldık
+        Intent take = getIntent();                       //diğer sayfadan yolladığımız intenti buradan teslim alıyoruz
+        String data = take.getStringExtra("Name"); // ismi burdan çektik
+        isim.setText(data);
+        tarihh.setText(simdikiZaman.toString());
+
+        cb1 = (CheckBox) findViewById(R.id.CheckBox1);
+        cb2 = (CheckBox) findViewById(R.id.CheckBox2);
+        cb3 = (CheckBox) findViewById(R.id.CheckBox3);
+        cb4 = (CheckBox) findViewById(R.id.CheckBox4);
+        cb5 = (CheckBox) findViewById(R.id.CheckBox5);
+        cb6 = (CheckBox) findViewById(R.id.CheckBox6);
+        cb7 = (CheckBox) findViewById(R.id.CheckBox7);
+        cb8 = (CheckBox) findViewById(R.id.CheckBox8);
+        cb9 = (CheckBox) findViewById(R.id.CheckBox9);
+        cb10 = (CheckBox) findViewById(R.id.CheckBox10);
+        cb11 = (CheckBox) findViewById(R.id.CheckBox11);
+        cb12 = (CheckBox) findViewById(R.id.CheckBox12);
+        cb13 = (CheckBox) findViewById(R.id.CheckBox13);
+        cb14 = (CheckBox) findViewById(R.id.CheckBox14);
+        cb15 = (CheckBox) findViewById(R.id.CheckBox15);
+        cb16 = (CheckBox) findViewById(R.id.CheckBox16);
+        cb17 = (CheckBox) findViewById(R.id.CheckBox17);
+        cb18 = (CheckBox) findViewById(R.id.CheckBox18);
+        cb19 = (CheckBox) findViewById(R.id.CheckBox19);
+        cb20 = (CheckBox) findViewById(R.id.CheckBox20);
+        cb21 = (CheckBox) findViewById(R.id.CheckBox21);
+        cb22 = (CheckBox) findViewById(R.id.CheckBox22);
+        cb23 = (CheckBox) findViewById(R.id.CheckBox23);
+        cb24 = (CheckBox) findViewById(R.id.CheckBox24);
+        cb25 = (CheckBox) findViewById(R.id.CheckBox25);
+        cb26 = (CheckBox) findViewById(R.id.CheckBox26);
+        cb27 = (CheckBox) findViewById(R.id.CheckBox27);
+        cb28 = (CheckBox) findViewById(R.id.CheckBox28);
+        cb29 = (CheckBox) findViewById(R.id.CheckBox29);
+        cb30 = (CheckBox) findViewById(R.id.CheckBox30);
+
+
+        t1 = (TextView) findViewById(R.id.k1);
+        t2 = (TextView) findViewById(R.id.k2);
+        t3 = (TextView) findViewById(R.id.k3);
+        t4 = (TextView) findViewById(R.id.k4);
+        t5 = (TextView) findViewById(R.id.k5);
+        t6 = (TextView) findViewById(R.id.k6);
+        t7 = (TextView) findViewById(R.id.k7);
+        t8 = (TextView) findViewById(R.id.k8);
+        t9 = (TextView) findViewById(R.id.k9);
+        t10 = (TextView) findViewById(R.id.k10);
+        t11 = (TextView) findViewById(R.id.k11);
+        t12 = (TextView) findViewById(R.id.k12);
+        t13 = (TextView) findViewById(R.id.k13);
+        t14 = (TextView) findViewById(R.id.k14);
+        t15 = (TextView) findViewById(R.id.k15);
+        t16 = (TextView) findViewById(R.id.k16);
+        t17 = (TextView) findViewById(R.id.k17);
+        t18 = (TextView) findViewById(R.id.k18);
+        t19 = (TextView) findViewById(R.id.k19);
+        t20 = (TextView) findViewById(R.id.k20);
+        t21 = (TextView) findViewById(R.id.k21);
+        t22 = (TextView) findViewById(R.id.k22);
+        t23 = (TextView) findViewById(R.id.k23);
+        t24 = (TextView) findViewById(R.id.k24);
+        t25 = (TextView) findViewById(R.id.k25);
+        t26 = (TextView) findViewById(R.id.k26);
+        t27 = (TextView) findViewById(R.id.k27);
+        t28 = (TextView) findViewById(R.id.k28);
+        t29 = (TextView) findViewById(R.id.k29);
+        t30 = (TextView) findViewById(R.id.k30);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                makechekbox();
+                makeecxelfile();//sıralama önemli ilk olarak checkbox tan veriler texviewlere  kaydediliyor daha sonra ecxel e kaydediliyor
+
+            }
+
+            private void makechekbox() {
+
+
+                if (cb1.isChecked()) {
+                    cb1.setBackgroundColor(Color.CYAN);
+                    t1.setText("+");
+                }
+                if (cb2.isChecked()) {
+                    cb2.setBackgroundColor(Color.CYAN);
+                    t2.setText("+");
+                }
+                if (cb3.isChecked()) {
+                    cb3.setBackgroundColor(Color.CYAN);
+                    t3.setText("+");
+                }
+                if (cb4.isChecked()) {
+                    cb4.setBackgroundColor(Color.CYAN);
+                    t4.setText("+");
+                }
+                if (cb5.isChecked()) {
+                    cb5.setBackgroundColor(Color.CYAN);
+                    t5.setText("+");
+                }
+                if (cb6.isChecked()) {
+                    cb6.setBackgroundColor(Color.CYAN);
+                    t6.setText("+");
+                }
+                if (cb7.isChecked()) {
+                    cb7.setBackgroundColor(Color.CYAN);
+                    t7.setText("+");
+                }
+                if (cb8.isChecked()) {
+                    cb8.setBackgroundColor(Color.CYAN);
+                    t8.setText("+");
+                }
+                if (cb9.isChecked()) {
+                    cb9.setBackgroundColor(Color.CYAN);
+                    t9.setText("+");
+                }
+                if (cb10.isChecked()) {
+                    cb10.setBackgroundColor(Color.CYAN);
+                    t10.setText("+");
+                }
+                if (cb11.isChecked()) {
+                    cb11.setBackgroundColor(Color.CYAN);
+                    t11.setText("+");
+                }
+                if (cb12.isChecked()) {
+                    cb12.setBackgroundColor(Color.CYAN);
+                    t12.setText("+");
+                }
+                if (cb13.isChecked()) {
+                    cb13.setBackgroundColor(Color.CYAN);
+                    t13.setText("+");
+                }
+                if (cb14.isChecked()) {
+                    cb14.setBackgroundColor(Color.CYAN);
+                    t14.setText("+");
+                }
+                if (cb15.isChecked()) {
+                    cb15.setBackgroundColor(Color.CYAN);
+                    t15.setText("+");
+                }
+                if (cb16.isChecked()) {
+                    cb16.setBackgroundColor(Color.CYAN);
+                    t16.setText("+");
+                }
+                if (cb17.isChecked()) {
+                    cb17.setBackgroundColor(Color.CYAN);
+                    t17.setText("+");
+                }
+                if (cb18.isChecked()) {
+                    cb18.setBackgroundColor(Color.CYAN);
+                    t18.setText("+");
+                }
+                if (cb19.isChecked()) {
+                    cb19.setBackgroundColor(Color.CYAN);
+                    t19.setText("+");
+                }
+                if (cb20.isChecked()) {
+                    cb20.setBackgroundColor(Color.CYAN);
+                    t20.setText("+");
+                }
+                if (cb21.isChecked()) {
+                    cb21.setBackgroundColor(Color.CYAN);
+                    t21.setText("+");
+                }
+                if (cb22.isChecked()) {
+                    cb22.setBackgroundColor(Color.CYAN);
+                    t22.setText("+");
+                }
+                if (cb23.isChecked()) {
+                    cb23.setBackgroundColor(Color.CYAN);
+                    t23.setText("+");
+                }
+                if (cb24.isChecked()) {
+                    cb24.setBackgroundColor(Color.CYAN);
+                    t24.setText("+");
+                }
+                if (cb25.isChecked()) {
+                    cb25.setBackgroundColor(Color.CYAN);
+                    t25.setText("+");
+                }
+                if (cb26.isChecked()) {
+                    cb26.setBackgroundColor(Color.CYAN);
+                    t26.setText("+");
+                }
+                if (cb27.isChecked()) {
+                    cb27.setBackgroundColor(Color.CYAN);
+                    t27.setText("+");
+                }
+                if (cb28.isChecked()) {
+                    cb28.setBackgroundColor(Color.CYAN);
+                    t28.setText("+");
+                }
+                if (cb29.isChecked()) {
+                    cb29.setBackgroundColor(Color.CYAN);
+                    t29.setText("+");
+                }
+                if (cb30.isChecked()) {
+                    cb30.setBackgroundColor(Color.CYAN);
+                    t30.setText("+");
+                }
+            }
+
+            private final File filepath = new File(Environment.getExternalStorageDirectory() + "/" + tarihh.getText().toString() + ".xls");
+
+            private void makeecxelfile() {
+
+                HSSFWorkbook hssfWorkbook = new HSSFWorkbook();    //excel de yeni bir çalışma dosyası tanımlıyoruz
+                HSSFSheet hssfSheet = hssfWorkbook.createSheet();  //bu dosya içinde yeni bir sayfa tanımlıyoruz
+
+                CellStyle cs = hssfWorkbook.createCellStyle();
+                CellStyle ck = hssfWorkbook.createCellStyle();
+                CellStyle cm = hssfWorkbook.createCellStyle();
+                CellStyle cb = hssfWorkbook.createCellStyle();  //cs ,ck,cm ve cb isimli hücre stilerini tanımlıyoruz
+
+
+                cm.setWrapText(true);                     //burada girilen metinlerin hücre içine sığmasını istiyoruz
+
+
+                cb.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex());  //arka plan renklerini ayarlıyoruz
+                cb.setFillPattern(SOLID_FOREGROUND);                             // arkanın renklenmesi için şart galiba
+                cb.setWrapText(true);
+
+                         // girilen metinlerin  hücre içinde ortalanmasını istiyoruz
+
+
+                cs.setWrapText(true);
+                ck.setWrapText(true);
+                HSSFFont font = hssfWorkbook.createFont();
+                HSSFFont fontb = hssfWorkbook.createFont();     //fontlarını giriyoruz
+
+                cs.setFont(font);
+                ck.setFont(fontb);                               //renkler
+
+                HSSFRow hssfRow = hssfSheet.createRow(0);
+                HSSFRow satir1 = hssfSheet.createRow(1);
+                HSSFRow satir2 = hssfSheet.createRow(2);
+                HSSFRow satir3 = hssfSheet.createRow(3);
+                HSSFRow satir4 = hssfSheet.createRow(4);
+                HSSFRow satir5 = hssfSheet.createRow(5);
+                HSSFRow satir6 = hssfSheet.createRow(6);
+                HSSFRow satir7 = hssfSheet.createRow(7);
+                HSSFRow satir8 = hssfSheet.createRow(8);
+                HSSFRow satir9 = hssfSheet.createRow(9);
+                HSSFRow satir10 = hssfSheet.createRow(10);
+                HSSFRow satir11 = hssfSheet.createRow(11);
+                HSSFRow satir12 = hssfSheet.createRow(12);
+                HSSFRow satir13 = hssfSheet.createRow(13);
+                HSSFRow satir14 = hssfSheet.createRow(14);
+                HSSFRow satir15 = hssfSheet.createRow(15);
+                HSSFRow satir16 = hssfSheet.createRow(16);
+                HSSFRow satir17 = hssfSheet.createRow(17);
+                HSSFRow satir18 = hssfSheet.createRow(18);
+                HSSFRow satir19 = hssfSheet.createRow(19);
+                HSSFRow satir20 = hssfSheet.createRow(20);
+                HSSFRow satir21 = hssfSheet.createRow(21);
+                HSSFRow satir22 = hssfSheet.createRow(22);
+                HSSFRow satir23 = hssfSheet.createRow(23);
+                HSSFRow satir24 = hssfSheet.createRow(24);
+                HSSFRow satir25 = hssfSheet.createRow(25);
+                HSSFRow satir26 = hssfSheet.createRow(26);
+                HSSFRow satir27 = hssfSheet.createRow(27);
+                HSSFRow satir28 = hssfSheet.createRow(28);
+                HSSFRow satir29 = hssfSheet.createRow(29);
+                HSSFRow satir30 = hssfSheet.createRow(30);
+
+
+
+                //satır ismi ve hangi sayfada olduğunu ve kaçıncı satır olduğunu tanımlıyoruz
+
+                HSSFCell b1 = hssfRow.createCell(1);
+                HSSFCell b2 = hssfRow.createCell(2);
+                HSSFCell b3 = hssfRow.createCell(3);
+                b1.setCellValue("KONTROL DURUMU");
+                b2.setCellValue("CHECKLİST");
+                b3.setCellValue("YORUMLAR");
+                b1.setCellStyle(cb);
+                b2.setCellStyle(cb);
+                b3.setCellStyle(cb);                                 //başlık için stil ve konumları yukarda ayarlıyoruz
+
+                HSSFCell sutun0;       //isim
+                sutun0 = satir1.createCell(6);
+                HSSFCell hazrlyn = satir1.createCell(5);      //hazırlayan
+                HSSFCell tarih = hssfRow.createCell(6);       //tarih
+
+                HSSFCell sutun1 = satir1.createCell(2);
+                HSSFCell sutun2 = satir2.createCell(2);
+                HSSFCell sutun3 = satir3.createCell(2);
+                HSSFCell sutun4 = satir4.createCell(2);
+                HSSFCell sutun5 = satir5.createCell(2);
+                HSSFCell sutun6 = satir6.createCell(2);
+                HSSFCell sutun7 = satir7.createCell(2);
+                HSSFCell sutun8 = satir8.createCell(2);
+                HSSFCell sutun9 = satir9.createCell(2);
+                HSSFCell sutun10 = satir10.createCell(2);
+                HSSFCell sutun11 = satir11.createCell(2);
+                HSSFCell sutun12 = satir12.createCell(2);
+                HSSFCell sutun13 = satir13.createCell(2);
+                HSSFCell sutun14 = satir14.createCell(2);
+                HSSFCell sutun15 = satir15.createCell(2);
+                HSSFCell sutun16 = satir16.createCell(2);
+                HSSFCell sutun17 = satir17.createCell(2);
+                HSSFCell sutun18 = satir18.createCell(2);
+                HSSFCell sutun19 = satir19.createCell(2);
+                HSSFCell sutun20 = satir20.createCell(2);
+                HSSFCell sutun21 = satir21.createCell(2);
+                HSSFCell sutun22 = satir22.createCell(2);
+                HSSFCell sutun23 = satir23.createCell(2);
+                HSSFCell sutun24 = satir24.createCell(2);
+                HSSFCell sutun25 = satir25.createCell(2);
+                HSSFCell sutun26 = satir26.createCell(2);
+                HSSFCell sutun27 = satir27.createCell(2);
+                HSSFCell sutun28 = satir28.createCell(2);
+                HSSFCell sutun29 = satir29.createCell(2);
+                HSSFCell sutun30 = satir30.createCell(2);
+
+                //burada hücre  isimlerini ve hangi sutunda olduğunu tanımlıyoruz
+
+                HSSFCell stn1 = satir1.createCell(3);
+                HSSFCell stn2 = satir2.createCell(3);
+                HSSFCell stn3 = satir3.createCell(3);
+                HSSFCell stn4 = satir4.createCell(3);
+                HSSFCell stn5 = satir5.createCell(3);
+                HSSFCell stn6 = satir6.createCell(3);
+                HSSFCell stn7 = satir7.createCell(3);
+                HSSFCell stn8 = satir8.createCell(3);
+                HSSFCell stn9 = satir9.createCell(3);
+                HSSFCell stn10 = satir10.createCell(3);
+                HSSFCell stn11 = satir11.createCell(3);
+                HSSFCell stn12 = satir12.createCell(3);
+                HSSFCell stn13 = satir13.createCell(3);
+                HSSFCell stn14 = satir14.createCell(3);
+                HSSFCell stn15 = satir15.createCell(3);
+                HSSFCell stn16 = satir16.createCell(3);
+                HSSFCell stn17 = satir17.createCell(3);
+                HSSFCell stn18 = satir18.createCell(3);
+                HSSFCell stn19 = satir19.createCell(3);
+                HSSFCell stn20 = satir20.createCell(3);
+                HSSFCell stn21 = satir21.createCell(3);
+                HSSFCell stn22 = satir22.createCell(3);
+                HSSFCell stn23 = satir23.createCell(3);
+                HSSFCell stn24 = satir24.createCell(3);
+                HSSFCell stn25 = satir25.createCell(3);
+                HSSFCell stn26 = satir26.createCell(3);
+                HSSFCell stn27 = satir27.createCell(3);
+                HSSFCell stn28 = satir28.createCell(3);
+                HSSFCell stn29 = satir29.createCell(3);
+                HSSFCell stn30 = satir30.createCell(3);
+
+                //burada 3. stundaki hücreleri tanımlıyoruz
+
+                HSSFCell ck1 = satir1.createCell(1);
+                HSSFCell ck2 = satir2.createCell(1);
+                HSSFCell ck3 = satir3.createCell(1);
+                HSSFCell ck4 = satir4.createCell(1);
+                HSSFCell ck5 = satir5.createCell(1);
+                HSSFCell ck6 = satir6.createCell(1);
+                HSSFCell ck7 = satir7.createCell(1);
+                HSSFCell ck8 = satir8.createCell(1);
+                HSSFCell ck9 = satir9.createCell(1);
+                HSSFCell ck10 = satir10.createCell(1);
+                HSSFCell ck11 = satir11.createCell(1);
+                HSSFCell ck12 = satir12.createCell(1);
+                HSSFCell ck13 = satir13.createCell(1);
+                HSSFCell ck14 = satir14.createCell(1);
+                HSSFCell ck15 = satir15.createCell(1);
+                HSSFCell ck16 = satir16.createCell(1);
+                HSSFCell ck17 = satir17.createCell(1);
+                HSSFCell ck18 = satir18.createCell(1);
+                HSSFCell ck19 = satir19.createCell(1);
+                HSSFCell ck20 = satir20.createCell(1);
+                HSSFCell ck21 = satir21.createCell(1);
+                HSSFCell ck22 = satir22.createCell(1);
+                HSSFCell ck23 = satir23.createCell(1);
+                HSSFCell ck24 = satir24.createCell(1);
+                HSSFCell ck25 = satir25.createCell(1);
+                HSSFCell ck26 = satir26.createCell(1);
+                HSSFCell ck27 = satir27.createCell(1);
+                HSSFCell ck28 = satir28.createCell(1);
+                HSSFCell ck29 = satir29.createCell(1);
+                HSSFCell ck30 = satir30.createCell(1);
+
+                //+ işaretlerinin hangi stunda olacaklarını tanımlıyoruz
+
+
+                ck1.setCellValue(t1.getText().toString());
+                ck2.setCellValue(t2.getText().toString());
+                ck3.setCellValue(t3.getText().toString());
+                ck4.setCellValue(t4.getText().toString());
+                ck5.setCellValue(t5.getText().toString());
+                ck6.setCellValue(t6.getText().toString());
+                ck7.setCellValue(t7.getText().toString());
+                ck8.setCellValue(t8.getText().toString());
+                ck9.setCellValue(t9.getText().toString());
+                ck10.setCellValue(t10.getText().toString());
+                ck11.setCellValue(t11.getText().toString());
+                ck12.setCellValue(t12.getText().toString());
+                ck13.setCellValue(t13.getText().toString());
+                ck14.setCellValue(t14.getText().toString());
+                ck15.setCellValue(t15.getText().toString());
+                ck16.setCellValue(t16.getText().toString());
+                ck17.setCellValue(t17.getText().toString());
+                ck18.setCellValue(t18.getText().toString());
+                ck19.setCellValue(t19.getText().toString());
+                ck20.setCellValue(t20.getText().toString());
+                ck21.setCellValue(t21.getText().toString());
+                ck22.setCellValue(t22.getText().toString());
+                ck23.setCellValue(t23.getText().toString());
+                ck24.setCellValue(t24.getText().toString());
+                ck25.setCellValue(t25.getText().toString());
+                ck26.setCellValue(t26.getText().toString());
+                ck27.setCellValue(t27.getText().toString());
+                ck28.setCellValue(t28.getText().toString());
+                ck29.setCellValue(t29.getText().toString());
+                ck30.setCellValue(t30.getText().toString());
+
+                //+ işareti excel e koyuyoruz
+
+                ck1.setCellStyle(cm);
+                ck2.setCellStyle(cm);
+                ck3.setCellStyle(cm);
+                ck4.setCellStyle(cm);
+                ck5.setCellStyle(cm);
+                ck6.setCellStyle(cm);
+                ck7.setCellStyle(cm);
+                ck8.setCellStyle(cm);
+                ck9.setCellStyle(cm);
+                ck10.setCellStyle(cm);
+                ck11.setCellStyle(cm);
+                ck12.setCellStyle(cm);
+                ck13.setCellStyle(cm);
+                ck14.setCellStyle(cm);
+                ck15.setCellStyle(cm);
+                ck16.setCellStyle(cm);
+                ck17.setCellStyle(cm);
+                ck18.setCellStyle(cm);
+                ck19.setCellStyle(cm);
+                ck20.setCellStyle(cm);
+                ck21.setCellStyle(cm);
+                ck22.setCellStyle(cm);
+                ck23.setCellStyle(cm);
+                ck24.setCellStyle(cm);
+                ck25.setCellStyle(cm);
+                ck26.setCellStyle(cm);
+                ck27.setCellStyle(cm);
+                ck28.setCellStyle(cm);
+                ck29.setCellStyle(cm);
+                ck30.setCellStyle(cm);
+
+                //"+"işaretlerinin stillerini belirliyoruz
+
+                sutun0.setCellValue(isim.getText().toString());
+                hazrlyn.setCellValue("OLUŞTURAN:");
+                tarih.setCellValue(tarihh.getText().toString());
+                tarih.setCellStyle(ck);
+                hazrlyn.setCellStyle(ck);
+                sutun0.setCellStyle(cm);                               //tarih ve isim hücrelerinin stillerini belirliyoruz
+
+                stn1.setCellValue(et1.getText().toString());
+                stn2.setCellValue(et2.getText().toString());
+                stn3.setCellValue(et3.getText().toString());
+                stn4.setCellValue(et4.getText().toString());
+                stn5.setCellValue(et5.getText().toString());
+                stn6.setCellValue(et6.getText().toString());
+                stn7.setCellValue(et7.getText().toString());
+                stn8.setCellValue(et8.getText().toString());
+                stn9.setCellValue(et9.getText().toString());
+                stn10.setCellValue(et10.getText().toString());
+                stn11.setCellValue(et11.getText().toString());
+                stn12.setCellValue(et12.getText().toString());
+                stn13.setCellValue(et13.getText().toString());
+                stn14.setCellValue(et14.getText().toString());
+                stn15.setCellValue(et15.getText().toString());
+                stn16.setCellValue(et16.getText().toString());
+                stn17.setCellValue(et17.getText().toString());
+                stn18.setCellValue(et18.getText().toString());
+                stn19.setCellValue(et19.getText().toString());
+                stn20.setCellValue(et20.getText().toString());
+                stn21.setCellValue(et21.getText().toString());
+                stn22.setCellValue(et22.getText().toString());
+                stn23.setCellValue(et23.getText().toString());
+                stn24.setCellValue(et24.getText().toString());
+                stn25.setCellValue(et25.getText().toString());
+                stn26.setCellValue(et26.getText().toString());
+                stn27.setCellValue(et27.getText().toString());
+                stn28.setCellValue(et28.getText().toString());
+                stn29.setCellValue(et29.getText().toString());
+                stn30.setCellValue(et30.getText().toString());
+
+                //edittexteki(kullanıcı tarafından girilen verileri ) excel e yazdırıyoruz
+
+                stn1.setCellStyle(cm);
+                stn2.setCellStyle(cm);
+                stn3.setCellStyle(cm);
+                stn4.setCellStyle(cm);
+                stn5.setCellStyle(cm);
+                stn6.setCellStyle(cm);
+                stn7.setCellStyle(cm);
+                stn8.setCellStyle(cm);
+                stn9.setCellStyle(cm);
+                stn10.setCellStyle(cm);
+                stn11.setCellStyle(cm);
+                stn12.setCellStyle(cm);
+                stn13.setCellStyle(cm);
+                stn14.setCellStyle(cm);
+                stn15.setCellStyle(cm);
+                stn16.setCellStyle(cm);
+                stn17.setCellStyle(cm);
+                stn18.setCellStyle(cm);
+                stn19.setCellStyle(cm);
+                stn20.setCellStyle(cm);
+                stn21.setCellStyle(cm);
+                stn22.setCellStyle(cm);
+                stn23.setCellStyle(cm);
+                stn24.setCellStyle(cm);
+                stn25.setCellStyle(cm);
+                stn26.setCellStyle(cm);
+                stn27.setCellStyle(cm);
+                stn28.setCellStyle(cm);
+                stn29.setCellStyle(cm);
+                stn30.setCellStyle(cm); //bu hücrelerin stillerini ayarlıyoruz
+
+                sutun1.setCellStyle(cs);
+                sutun2.setCellStyle(cs);
+                sutun3.setCellStyle(cs);
+                sutun4.setCellStyle(cs);
+                sutun5.setCellStyle(cs);
+                sutun6.setCellStyle(cs);
+                sutun7.setCellStyle(cs);
+                sutun8.setCellStyle(cs);
+                sutun9.setCellStyle(cs);
+                sutun10.setCellStyle(cs);
+                sutun11.setCellStyle(cs);
+                sutun12.setCellStyle(cs);
+                sutun13.setCellStyle(cs);
+                sutun14.setCellStyle(cs);
+                sutun15.setCellStyle(cs);
+                sutun16.setCellStyle(cs);
+                sutun17.setCellStyle(cs);
+                sutun18.setCellStyle(cs);
+                sutun19.setCellStyle(cs);
+                sutun20.setCellStyle(cs);
+                sutun21.setCellStyle(cs);
+                sutun22.setCellStyle(cs);
+                sutun23.setCellStyle(cs);
+                sutun24.setCellStyle(cs);
+                sutun25.setCellStyle(cs);
+                sutun26.setCellStyle(cs);
+                sutun27.setCellStyle(cs);
+                sutun28.setCellStyle(cs);
+                sutun29.setCellStyle(cs);
+                sutun30.setCellStyle(cs);
+
+                sutun1.setCellValue("1.");
+                sutun2.setCellValue("2.");
+                sutun3.setCellValue("3.");
+                sutun4.setCellValue("4.");
+                sutun5.setCellValue("5.");
+                sutun6.setCellValue("6.");
+                sutun7.setCellValue("7.");
+                sutun8.setCellValue("8.");
+                sutun9.setCellValue("9.");
+                sutun10.setCellValue("10.");
+                sutun11.setCellValue("11.");
+                sutun12.setCellValue("12.");
+                sutun13.setCellValue("13.");
+                sutun14.setCellValue("14.");
+                sutun15.setCellValue("15.");
+                sutun16.setCellValue("16.");
+                sutun17.setCellValue("17.");
+                sutun18.setCellValue("18.");
+                sutun19.setCellValue("19.");
+                sutun20.setCellValue("20.");
+                sutun21.setCellValue("21.");
+                sutun22.setCellValue("22.");
+                sutun23.setCellValue("23.");
+                sutun24.setCellValue("24.");
+                sutun25.setCellValue("25.");
+                sutun26.setCellValue("26.");
+                sutun27.setCellValue("27.");
+                sutun28.setCellValue("28.");
+                sutun29.setCellValue("29.");
+                sutun30.setCellValue("30.");
+
+                try {
+
+
+                        FileOutputStream fileOutputStream = new FileOutputStream(filepath);
+                        hssfWorkbook.write(fileOutputStream);
+                        Toast.makeText(AnaEkran2.this, "Dosya dahili depolama alanına " + tarihh.getText().toString() + " adında kaydedildi!  ", Toast.LENGTH_SHORT).show();
+
+                        Intent go = new Intent(AnaEkran2.this, MainActivity.class);
+                        startActivity(go);
+
+
+                        fileOutputStream.flush();
+                        fileOutputStream.close();
+
+
+
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+            }
+
+
+        });
+
+
+    }
+}

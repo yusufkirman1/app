@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cz2"
+    tools:context=".AnaEkran2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/liste1"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="@string/liste1"
+            android:textSize="25sp"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="27dp" />
+
+        <TextView
+            android:id="@+id/isim"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:gravity="center"
+            android:hint="@string/isim"
+            android:text=""
+            android:textSize="19sp"
+            android:textColorHint="@color/purple_200"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="27dp" />
+
+        <TextView
+            android:id="@+id/tarih"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:text=""
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="27dp" />
+        <CheckBox
+            android:id="@+id/CheckBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox1"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/EditText1"
+            android:inputType="text"
+            tools:ignore="MissingConstraints,TextSizeCheck"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k1"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox2"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="212dp" />
+
+        <EditText
+            android:id="@+id/EditText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/EditText2"
+            android:inputType="text"
+            tools:ignore="MissingConstraints,TextSizeCheck"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="389dp" />
+
+        <TextView
+            android:id="@+id/k2"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox3"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="340dp" />
+
+        <EditText
+            android:id="@+id/EditText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/EditText3"
+            android:inputType="text"
+
+            tools:ignore="MissingConstraints,TextSizeCheck"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="510dp" />
+
+        <TextView
+            android:id="@+id/k3"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox4"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="461dp" />
+
+        <EditText
+            android:id="@+id/EditText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/EditText4"
+            android:inputType="text"
+
+            tools:ignore="TextSizeCheck,TextSizeCheck"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="510dp" />
+
+        <TextView
+            android:id="@+id/k4"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox5"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="461dp" />
+
+        <EditText
+            android:id="@+id/EditText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/EditText5"
+            android:inputType="text"
+            tools:ignore="MissingConstraints,TextSizeCheck"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="510dp" />
+
+        <TextView
+            android:id="@+id/k5"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox6"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="461dp" />
+
+        <EditText
+            android:id="@+id/EditText6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText6"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="510dp" />
+
+        <TextView
+            android:id="@+id/k6"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox7"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="461dp" />
+
+        <EditText
+            android:id="@+id/EditText7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/EditText7"
+            android:inputType="text"
+            tools:ignore="MissingConstraints,"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="510dp" />
+
+        <TextView
+            android:id="@+id/k7"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox8"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="461dp" />
+
+        <EditText
+            android:id="@+id/EditText8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/EditText8"
+            android:inputType="text"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="510dp" />
+
+        <TextView
+            android:id="@+id/k8"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox9"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="461dp" />
+
+        <EditText
+            android:id="@+id/EditText9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText9"
+
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="510dp" />
+
+        <TextView
+            android:id="@+id/k9"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox10"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="461dp" />
+
+        <EditText
+            android:id="@+id/EditText10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText10"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="510dp" />
+
+        <TextView
+            android:id="@+id/k10"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox11"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="461dp" />
+
+        <EditText
+            android:id="@+id/EditText11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText11"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="510dp" />
+
+        <TextView
+            android:id="@+id/k11"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox12"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="461dp" />
+
+        <EditText
+            android:id="@+id/EditText12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText12"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="510dp" />
+
+        <TextView
+            android:id="@+id/k12"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox13"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText13"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k13"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox14"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText14"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k14"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox15"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText15"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k15"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox16"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText16"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k16"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox17"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText17"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k17"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox18"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText18"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k18"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox19"
+            android:textSize="20sp"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText19"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k19"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox20"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText20"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k20"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox21"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText21"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k21"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox22"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText22"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k22"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox23"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText23"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k23"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox24"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText24"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k24"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox25"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText25"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k25"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center"
+            tools:ignore="TooManyViews" />
+
+        <CheckBox
+            android:id="@+id/CheckBox26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox26"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText26"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k26"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox27"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText27"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k27"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox28"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText28"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k28"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox29"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText29"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k29"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CheckBox30"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/EditText30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/EditText30"
+
+            tools:ignore="LabelFor,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <TextView
+
+            android:id="@+id/k30"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center" />
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn1"
+            />
+    </LinearLayout>
+
+
+
+</ScrollView>
